@@ -1,0 +1,1663 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/nl-java-web-mvc-mai-2006/de-in-dit-document-gebruikte-tools.html">
+      
+      
+        <link rel="prev" href="inleiding.html">
+      
+      
+        <link rel="next" href="de-basisprincipes-van-webontwikkeling-in-java.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. De in dit document gebruikte tools - De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-de-in-dit-document-gebruikte-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden" class="md-header__button md-logo" aria-label="De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. De in dit document gebruikte tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Overschakelen naar donkere modus"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Overschakelen naar donkere modus" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Overschakelen naar lichte modus"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Overschakelen naar lichte modus" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/nl-java-web-mvc-mai-2006" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden" class="md-nav__button md-logo" aria-label="De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    De basisprincipes van MVC-webontwikkeling in Java aan de hand van voorbeelden
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/nl-java-web-mvc-mai-2006" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welkom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="inleiding.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Inleiding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. De in dit document gebruikte tools
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="de-in-dit-document-gebruikte-tools.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. De in dit document gebruikte tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-j-ava-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. J ava 1.5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-de-tomcat-5-servletcontainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. De Tomcat 5-servletcontainer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-implementatie-van-een-webapplicatie-op-de-tomcat-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. Implementatie van een webapplicatie op de Tomcat-server
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Implementatie van een webapplicatie op de Tomcat-server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-implementatie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1. Implementatie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-beheer-van-tomcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2. Beheer van Tomcat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-beheer-van-geimplementeerde-webapplicaties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3. Beheer van geïmplementeerde webapplicaties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-webapplicatie-met-startpagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4. Webapplicatie met startpagina
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-installatie-van-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. Installatie van Eclipse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-tomcat-integratie-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5. Tomcat-integratie - Eclipse
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="de-basisprincipes-van-webontwikkeling-in-java.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. De basisprincipes van webontwikkeling in Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ontwikkeling-mvc-model---view---controller.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Ontwikkeling MVC (Model – View – Controller)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Webapplicatie MVC [personne] – versie 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Webapplicatie MVC [personne] – versie 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Webapplicatie MVC [personne] – versie 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="de-tagbibliotheek-jstl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. De tagbibliotheek JSTL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Webapplicatie MVC [personne] – versie 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Webapplicatie MVC [personne] – versie 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-6.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Webapplicatie MVC [personne] – versie 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Webapplicatie MVC [personne] – versie 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-personne---versie-8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Webapplicatie MVC [personne] – versie 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="spring-ioc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Spring IoC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-3---firebird-database.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 3 – Firebird-database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-4-postgres.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 4, Postgres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-5-mysql.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 5, MySQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="webapplicatie-mvc-in-een-3-tier-architectuur---voorbeeld-6-sql-server-express.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20. Webapplicatie MVC in een 3-tier-architectuur – Voorbeeld 6, SQL Server Express
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Conclusie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="de-code-van-het-artikel.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. De code van het artikel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2-de-in-dit-document-gebruikte-tools">2. <span style="color: #365f91">De in dit document gebruikte tools</span></h1>
+<p>In dit document gebruiken we de volgende tools:</p>
+<ul>
+  <li>een JDK Java 1.5
+  </li>
+  <li>de webserver TOMCAT (http://tomcat.apache.org/),
+  </li>
+  <li>de ontwikkelomgeving ECLIPSE (http://www.eclipse.org/) met de plug-in WTP (Web Tools Package).
+  </li>
+  <li>een browser (IE, NETSCAPE, MOZILLA Firefox, OPERA, ...).
+  </li>
+</ul>
+
+<p>Dit zijn gratis tools. Over het algemeen kunnen er tal van open-source-tools worden gebruikt bij webontwikkeling:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;" rowspan="2"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>IDE JAVA
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Jbuilder Foundation
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">http://www.borland.com/jbuilder/foundation/index.html</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Eclipse
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;" rowspan="2"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Bibliothèques JAVA
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Struts
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">http://struts.apache.org/</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Spring
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;" rowspan="6"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>SGBD
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>MySQL
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">http://www.mysql.com/</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Postgres
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Firebird
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Hypersonic
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>SQL Server Express 2005
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Oracle Express
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;" rowspan="3"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">Conteneurs</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">servlets</span>
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">http://tomcat.apache.org/</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Resin
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Jetty
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;" rowspan="2"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Navigateurs
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Netscape
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">http://www.netscape.com/</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Mozilla
+</code></pre></div>
+</div></td></tr></table>
+
+<p><span id="jdk15" name="jdk15" class="odt-bookmark-anchor"></span></p>
+<h2 id="21-j-ava-15">2.1. <span style="color: #4f81bd"><strong>J</strong> <strong>ava 1.5</strong></span></h2>
+<p>De Tomcat-servletcontainer 5.x vereist een Java Virtual Machine 1.5. U moet dus eerst deze versie van Java installeren, die u bij Sun kunt vinden via de url [http://www.sun.com] -&gt; [http://java.sun.com/j2se/1.5.0/download.jsp] (mei 2006):</p>
+<p><strong>stap 1</strong>:</p>
+<p><img src="images/100000000000039400000129B8336477.png" width="639" height="207" style="width:16.91cm;height:5.48cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000039400000129B8336477.png" /></p>
+<p><u><span style="color: #0563c1">étape 2</span></u> :</p>
+<p><img src="images/10000000000001760000005D61078DC6.png" width="262" height="65" style="width:6.93cm;height:1.72cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001760000005D61078DC6.png" /></p>
+<p><strong>stap 3</strong>:</p>
+<p>Start de installatie van JDK 1.5 vanuit het gedownloade bestand.</p>
+<p><span id="installtomcat55" name="installtomcat55" class="odt-bookmark-anchor"></span></p>
+<h2 id="22-de-tomcat-5-servletcontainer">2.2. <span style="color: #4f81bd"><strong>De Tomcat 5-servletcontainer</strong></span></h2>
+<p>Om servlets uit te voeren, hebben we een servletcontainer nodig. Hier stellen we er een voor, Tomcat 5.x, beschikbaar via de url <strong>http://tomcat.apache.org/</strong>. We beschrijven de procedure (mei 2006) om deze te installeren. Als er al een eerdere versie van Tomcat is geïnstalleerd, is het raadzaam deze eerst te verwijderen.</p>
+<p><img src="images/1000000000000170000001EE4FA2B0B3.png" width="256" height="344" style="width:6.78cm;height:9.089cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000170000001EE4FA2B0B3.png" /></p>
+<p>Om het product te downloaden, volgt u de bovenstaande link [Tomcat 5.x]:</p>
+<p><img src="images/1000000000000190000000EFB673D510.png" width="280" height="167" style="width:7.41cm;height:4.431cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000190000000EFB673D510.png" /></p>
+<p>Kies het .exe-bestand voor het Windows-platform. Zodra dit is gedownload, start u de installatie van Tomcat:</p>
+<p>Voer [next] uit -&gt;</p>
+<p><img src="images/10000000000001F400000189BC5401F7.png" width="350" height="275" style="width:9.26cm;height:7.28cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F400000189BC5401F7.png" /></p>
+<p>Accepteer de licentievoorwaarden -&gt;</p>
+<p><img src="images/10000000000001F5000001886142672D.png" width="351" height="274" style="width:9.28cm;height:7.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F5000001886142672D.png" /></p>
+<p>Voer [next] in -&gt;</p>
+<p><img src="images/10000000000001F20000018718E17B25.png" width="348" height="274" style="width:9.22cm;height:7.241cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F20000018718E17B25.png" /></p>
+<p>De voorgestelde installatiemap accepteren of wijzigen met [Browse] -&gt;</p>
+<p><img src="images/10000000000001F4000001877F7F615A.png" width="350" height="274" style="width:9.26cm;height:7.241cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F4000001877F7F615A.png" /></p>
+<p>Stel de gebruikersnaam en het wachtwoord van de Tomcat-serverbeheerder in. Hier hebben we [admin / admin] ingevoerd -&gt;</p>
+<p><img src="images/10000000000002BB00000221E12A58D0.png" width="350" height="273" style="width:9.248cm;height:7.211cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002BB00000221E12A58D0.png" /></p>
+<p>Tomcat 5.x heeft JRE 1.5 nodig. Normaal gesproken vindt het de versie die op uw computer is geïnstalleerd. Hierboven is het opgegeven pad dat van de JRE 1.5 die in paragraaf<a href="#jdk15"><u><span style="color: #0563c1"> 2.1</span></u></a> is gedownload. Als er geen JRE wordt gevonden, geef dan de hoofdmap aan met behulp van de knop [1]. Gebruik daarna de knop [Install] om Tomcat 5.x te installeren -&gt;</p>
+<p><img src="images/10000000000001F5000001883CA14231.png" width="351" height="274" style="width:9.28cm;height:7.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F5000001883CA14231.png" /></p>
+<p>De knop [Finish] voltooit de installatie. De aanwezigheid van Tomcat wordt aangegeven door een pictogram rechts in de Windows-taakbalk:</p>
+<p><img src="images/100000000000007E0000004A2A00B5AB.png" width="101" height="59" style="width:2.671cm;height:1.57cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000007E0000004A2A00B5AB.png" /></p>
+<p>Met een rechtermuisklik op dit pictogram krijgt u toegang tot de opstart- en afsluitopdrachten van de server:</p>
+<p><img src="images/10000000000000A70000008A2D875879.png" width="133" height="110" style="width:3.53cm;height:2.919cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A70000008A2D875879.png" /></p>
+<p>We gebruiken de optie [Stop service] om de webserver nu te stoppen:</p>
+<p><img src="images/100000000000004D0000004231AD0E16.png" width="62" height="53" style="width:1.63cm;height:1.401cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000004D0000004231AD0E16.png" /></p>
+<p>Let op de verandering in de status van het pictogram. Dit pictogram kan uit de taakbalk worden verwijderd:</p>
+<p><img src="images/10000000000000920000008D81F67C2A.png" width="117" height="113" style="width:3.09cm;height:2.979cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000920000008D81F67C2A.png" /></p>
+<p>Tomcat is geïnstalleerd in de door de gebruiker gekozen map, die we voortaan <strong>&lt;tomcat&gt;</strong> zullen noemen. De mapstructuur van deze map voor de gedownloade versie Tomcat 5.5.17 is als volgt:</p>
+<p><img src="images/1000000000000089000000AD7264C4B6.png" width="96" height="121" style="width:2.54cm;height:3.191cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000089000000AD7264C4B6.png" /></p>
+<p>Door de installatie van Tomcat zijn er een aantal snelkoppelingen in het menu [Démarrer] toegevoegd. We gebruiken de onderstaande link [Monitor] om het hulpprogramma voor het starten en stoppen van Tomcat te starten:</p>
+<p><img src="images/100000000000021A000000AF3356D78B.png" width="376" height="122" style="width:9.961cm;height:3.24cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021A000000AF3356D78B.png" /></p>
+<p>We zien dan het eerder getoonde pictogram:</p>
+<p><img src="images/100000000000004D0000004231AD0E16.png" width="62" height="53" style="width:1.63cm;height:1.401cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000004D0000004231AD0E16.png" /></p>
+<p>De Tomcat-monitor kan worden geactiveerd door op dit pictogram te dubbelklikken:</p>
+<p><img src="images/100000000000019A00000190D41B038E.png" width="287" height="280" style="width:7.59cm;height:7.41cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019A00000190D41B038E.png" /></p>
+<p>Met de knoppen [Start - Stop - Pause] - Restart kunnen we de server starten, stoppen en opnieuw opstarten. We starten de server met [Start] en roepen vervolgens in een browser de URL http://localhost:8080 op. We zouden een pagina moeten zien die lijkt op de volgende:</p>
+<p><img src="images/10000000000003BD00000154E227E6C7.png" width="577" height="204" style="width:15.27cm;height:5.399cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003BD00000154E227E6C7.png" /></p>
+<p>Via de onderstaande links kun je controleren of Tomcat correct is geïnstalleerd:</p>
+<p><img src="images/10000000000000E100000084D63B5B07.png" width="158" height="92" style="width:4.17cm;height:2.439cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E100000084D63B5B07.png" /></p>
+<p>Alle links op de pagina [http://localhost:8080] zijn interessant en de lezer wordt uitgenodigd om ze te verkennen. We zullen later terugkomen op de links waarmee de op de server geïmplementeerde webapplicaties kunnen worden beheerd:</p>
+<p><img src="images/10000000000000E7000000889D7AD7E4.png" width="162" height="95" style="width:4.279cm;height:2.521cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E7000000889D7AD7E4.png" /></p>
+<h2 id="23-implementatie-van-een-webapplicatie-op-de-tomcat-server">2.3. <span style="color: #4f81bd">Implementatie van een webapplicatie op de Tomcat-server</span></h2>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
+<p>Leesmateriaal [ref1]: hoofdstuk 1, hoofdstuk 2: 2.3.1, 2.3.2, 2.3.3</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
+<h3 id="231-implementatie">2.3.1. <span style="color: #4f81bd"><strong>Implementatie</strong></span></h3>
+<p>Een webapplicatie moet aan bepaalde regels voldoen om in een servletcontainer te kunnen worden geïmplementeerd. Stel dat &lt;webapp&gt; de map van een webapplicatie is. Een webapplicatie bestaat uit:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>classes
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">in de map &lt;webapp&gt;\WEB-INF\classes</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>archives java
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">in de map &lt;webapp&gt;\WEB-INF\lib</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>vues, ressources (.jsp, .html, ...)
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">in de map &lt;webapp&gt; of submappen</div></td></tr></table>
+
+<p>De webapplicatie wordt geconfigureerd via een bestand XML: <strong>&lt;webapp&gt;\WEB-INF\web.xml</strong>.</p>
+<p>Laten we de webapplicatie bouwen met de volgende mappenstructuur:</p>
+<p><img src="images/100000000000007D00000058C9BC9C24.png" width="87" height="62" style="width:2.311cm;height:1.63cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000007D00000058C9BC9C24.png" /></p>
+<p>We zullen de bovenstaande mappenstructuur opbouwen met de Windows Verkenner. De mappen [classes] en [lib] zijn hier leeg. De map [vues] bevat een statisch bestand HTML:</p>
+<p><img src="images/100000000000015900000057EB61EDD0.png" width="242" height="61" style="width:6.391cm;height:1.61cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015900000057EB61EDD0.png" /></p>
+<p>met de volgende inhoud:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Application exemple<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>      Application exemple active ....
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Als je dit bestand in een browser laadt, krijg je de volgende pagina te zien:</p>
+<p><img src="images/10000000000002680000005FC7584CB0.png" width="431" height="67" style="width:11.411cm;height:1.76cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002680000005FC7584CB0.png" /></p>
+<p>De door de browser weergegeven URL laat zien dat de pagina niet door een webserver is geleverd, maar rechtstreeks door de browser is geladen. We willen nu dat deze beschikbaar is via de Tomcat-webserver.</p>
+<p>Laten we teruggaan naar de mappenstructuur van de map &lt;tomcat&gt;:</p>
+<p><img src="images/1000000000000089000000AD7264C4B6.png" width="96" height="121" style="width:2.54cm;height:3.191cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000089000000AD7264C4B6.png" /></p>
+<p>De configuratie van de webapplicaties die op de Tomcat-server zijn geïmplementeerd, gebeurt met behulp van XML-bestanden die in de map [&lt;tomcat&gt;\conf\Catalina\localhost] zijn geplaatst:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000C10000007A7B34EE12.png" width="135" height="85" style="display:inline-block; margin:4px;width:3.57cm;height:2.26cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C10000007A7B34EE12.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000BD000000565A469739.png" width="132" height="60" style="display:inline-block; margin:4px;width:3.5cm;height:1.589cm;" class="odt-zoomable" data-zoom-src="images/10000000000000BD000000565A469739.png" /></td></tr></table>
+
+<p>Deze XML-bestanden kunnen handmatig worden aangemaakt, aangezien hun structuur eenvoudig is. In plaats van deze aanpak te volgen, gaan we gebruikmaken van de webtools die Tomcat ons biedt.</p>
+<h3 id="232-beheer-van-tomcat">2.3.2. <span style="color: #4f81bd">Beheer van Tomcat</span></h3>
+<p>Op de startpagina http://localhost:8080 biedt de server ons links om deze te beheren:</p>
+<p><img src="images/100000000000015000000128F26EF089.png" width="235" height="207" style="width:6.219cm;height:5.48cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015000000128F26EF089.png" /></p>
+<p>Via de link [Tomcat Administration] kunnen we de bronnen configureren die Tomcat ter beschikking stelt aan de webapplicaties die erin zijn geïmplementeerd, bijvoorbeeld een pool van verbindingen met een database. Laten we de link volgen:</p>
+<p><img src="images/10000000000003010000005EDD6675E9.png" width="538" height="66" style="width:14.24cm;height:1.739cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003010000005EDD6675E9.png" /></p>
+<p>De pagina die we te zien krijgen, geeft aan dat voor het beheer van Tomcat 5.x een specifiek pakket nodig is, genaamd &quot;admin&quot;. Laten we teruggaan naar de Tomcat-website:</p>
+<p><img src="images/1000000000000218000000A6D8B6858C.png" width="375" height="116" style="width:9.931cm;height:3.069cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000218000000A6D8B6858C.png" /></p>
+<p>Laten we het zip-bestand met de naam [Administration Web Application] downloaden en vervolgens uitpakken. De inhoud is als volgt:</p>
+<p><img src="images/10000000000000CE0000008984E6427E.png" width="144" height="96" style="width:3.821cm;height:2.54cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000CE0000008984E6427E.png" /></p>
+<p>De map [admin] moet worden gekopieerd naar [&lt;tomcat&gt;\server\webapps], waarbij &lt;tomcat&gt; de map is waarin Tomcat is geïnstalleerd 5.x:</p>
+<p><img src="images/10000000000000C700000113FC8A4A63.png" width="139" height="192" style="width:3.679cm;height:5.091cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C700000113FC8A4A63.png" /></p>
+<p>De map [localhost] bevat een bestand [admin.xml] dat moet worden gekopieerd naar [&lt;tomcat&gt;\conf\Catalina\localhost]:</p>
+<p><img src="images/10000000000000AC000000678C531EE4.png" width="121" height="72" style="width:3.191cm;height:1.91cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AC000000678C531EE4.png" /></p>
+<p>Sluit Tomcat af en start het opnieuw op als het actief was. Vraag vervolgens met een browser de startpagina van de webserver opnieuw op:</p>
+<p><img src="images/100000000000014B000001244443D770.png" width="232" height="204" style="width:6.13cm;height:5.41cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014B000001244443D770.png" /></p>
+<p>Volg de link [Tomcat Administration]. We krijgen een inlogpagina te zien:</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="top" />
+<p><strong>Opmerking</strong>: om de onderstaande pagina te krijgen, moest ik eerst handmatig de URL [http://localhost:8080/admin/index.jsp] opvragen. Pas daarna werkte de bovenstaande link [Tomcat Administration]. Ik weet niet of dit al dan niet een procedurefout van mijn kant was.</p>
+<hr style="border:0; border-top:0.99pt solid #000000; margin:0.75em 0;" data-odt-border="bottom" />
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000FB000000A0157EB243.png" width="176" height="112" style="display:inline-block; margin:4px;width:4.65cm;height:2.96cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FB000000A0157EB243.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000E4000000A9EB2253F3.png" width="159" height="118" style="display:inline-block; margin:4px;width:4.219cm;height:3.129cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E4000000A9EB2253F3.png" /></td></tr></table>
+
+<p>Hier moeten we de gegevens invoeren die we tijdens de installatie van Tomcat hebben opgegeven. In ons geval voeren we de combinatie <em>admin / admin</em> in. De knop [Login] brengt ons naar de volgende pagina:</p>
+<p><img src="images/10000000000000FC0000016F9FD0D308.png" width="177" height="257" style="width:4.671cm;height:6.8cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FC0000016F9FD0D308.png" /></p>
+<p>Op deze pagina kan de Tomcat-beheerder</p>
+<ul>
+  <li>gegevensbronnen (Data Sources) in te stellen,
+  </li>
+  <li>de informatie die nodig is voor het verzenden van e-mail (Mail Sessions),
+  </li>
+  <li>omgevingsgegevens die voor alle applicaties toegankelijk zijn (Environment Entries),
+  </li>
+  <li>Tomcat-gebruikers/beheerders te beheren (Users),
+  </li>
+  <li>gebruikersgroepen te beheren (Groups),
+  </li>
+  <li>rollen definiëren (= wat een gebruiker wel of niet mag doen),
+  </li>
+  <li>het definiëren van de kenmerken van de door de server geïmplementeerde webapplicaties (Service Catalina)
+  </li>
+</ul>
+
+<p>Laten we de bovenstaande link [Roles] volgen:</p>
+<p><img src="images/10000000000002A5000000F068F62971.png" width="474" height="168" style="width:12.539cm;height:4.44cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002A5000000F068F62971.png" /></p>
+<p>Met een rol kunt u bepalen wat een gebruiker of een groep gebruikers wel of niet mag doen. Aan een rol worden bepaalde rechten toegekend. Elke gebruiker is gekoppeld aan een of meer rollen en beschikt over de rechten die bij deze rollen horen. De onderstaande rol [manager] geeft het recht om de in Tomcat geïmplementeerde webapplicaties te beheren (implementeren, starten, stoppen, verwijderen). We gaan een gebruiker [manager] aanmaken die we aan de rol [manager] zullen toewijzen, zodat deze de Tomcat-applicaties kan beheren. Hiervoor volgen we de link [Users] op de beheerpagina:</p>
+<p><img src="images/10000000000002A1000000FB4D9CAD58.png" width="471" height="176" style="width:12.46cm;height:4.65cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002A1000000FB4D9CAD58.png" /></p>
+<p>We zien dat er al een aantal gebruikers bestaat. We gebruiken de optie [Create New User] om een nieuwe gebruiker aan te maken:</p>
+<p><img src="images/100000000000029200000188DE6BB90D.png" width="460" height="274" style="width:12.18cm;height:7.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000029200000188DE6BB90D.png" /></p>
+<p>We geven de gebruiker <strong>‘manager’</strong> het wachtwoord <strong>‘manager’</strong> en wijzen hem de rol <strong>‘manager’</strong> toe. We gebruiken de knop [Save] om deze toevoeging te bevestigen. De nieuwe gebruiker verschijnt in de lijst met gebruikers:</p>
+<p><img src="images/10000000000000EB000000FF634A5105.png" width="164" height="178" style="width:4.35cm;height:4.72cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000EB000000FF634A5105.png" /></p>
+<p>Deze nieuwe gebruiker wordt toegevoegd aan het bestand [&lt;tomcat&gt;\conf\tomcat-users.xml]:</p>
+<p><img src="images/10000000000000D8000000CCD62F072D.png" width="151" height="143" style="width:4.001cm;height:3.78cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D8000000CCD62F072D.png" /></p>
+<p>met de volgende inhoud:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-24-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-24-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-24-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-24-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-24-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-24-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-24-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-24-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-24-10">10</a></span>
+<span class="normal"><a href="#__codelineno-24-11">11</a></span>
+<span class="normal"><a href="#__codelineno-24-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="cp">&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39;?&gt;</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="nt">&lt;tomcat-users&gt;</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="w">  </span><span class="nt">&lt;role</span><span class="w"> </span><span class="na">rolename=</span><span class="s">&quot;tomcat&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="w">  </span><span class="nt">&lt;role</span><span class="w"> </span><span class="na">rolename=</span><span class="s">&quot;role1&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="w">  </span><span class="nt">&lt;role</span><span class="w"> </span><span class="na">rolename=</span><span class="s">&quot;manager&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="w">  </span><span class="nt">&lt;role</span><span class="w"> </span><span class="na">rolename=</span><span class="s">&quot;admin&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="w">  </span><span class="nt">&lt;user</span><span class="w"> </span><span class="na">username=</span><span class="s">&quot;tomcat&quot;</span><span class="w"> </span><span class="na">password=</span><span class="s">&quot;tomcat&quot;</span><span class="w"> </span><span class="na">roles=</span><span class="s">&quot;tomcat&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8"></a><span class="w">  </span><span class="nt">&lt;user</span><span class="w"> </span><span class="na">username=</span><span class="s">&quot;role1&quot;</span><span class="w"> </span><span class="na">password=</span><span class="s">&quot;tomcat&quot;</span><span class="w"> </span><span class="na">roles=</span><span class="s">&quot;role1&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9"></a><span class="w">  </span><span class="nt">&lt;user</span><span class="w"> </span><span class="na">username=</span><span class="s">&quot;both&quot;</span><span class="w"> </span><span class="na">password=</span><span class="s">&quot;tomcat&quot;</span><span class="w"> </span><span class="na">roles=</span><span class="s">&quot;tomcat,role1&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10"></a><span class="w">  </span><span class="nt">&lt;user</span><span class="w"> </span><span class="na">username=</span><span class="s">&quot;manager&quot;</span><span class="w"> </span><span class="na">password=</span><span class="s">&quot;manager&quot;</span><span class="w"> </span><span class="na">fullName=</span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="na">roles=</span><span class="s">&quot;manager&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11"></a><span class="w">  </span><span class="nt">&lt;user</span><span class="w"> </span><span class="na">username=</span><span class="s">&quot;admin&quot;</span><span class="w"> </span><span class="na">password=</span><span class="s">&quot;admin&quot;</span><span class="w"> </span><span class="na">roles=</span><span class="s">&quot;admin,manager&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12"></a><span class="nt">&lt;/tomcat-users&gt;</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+  <li>regel 10: de gebruiker [manager] die is aangemaakt
+  </li>
+</ul>
+
+<p>Een andere manier om gebruikers toe te voegen is door dit bestand rechtstreeks te bewerken. Dit is met name de manier waarop u te werk moet gaan als u toevallig het wachtwoord van de beheerder <strong>‘admin’</strong> of <strong>‘manager’</strong> bent vergeten.</p>
+<p><span id="tomcat-manager" name="tomcat-manager" class="odt-bookmark-anchor"></span></p>
+<h3 id="233-beheer-van-geimplementeerde-webapplicaties">2.3.3. <span style="color: #4f81bd">Beheer van geïmplementeerde webapplicaties</span></h3>
+<p>Laten we nu teruggaan naar de startpagina [http://localhost:8080] en de link [Tomcat Manager] volgen:</p>
+<p><img src="images/10000000000001530000012EC9798919.png" width="237" height="211" style="width:6.279cm;height:5.59cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001530000012EC9798919.png" /></p>
+<p>We komen dan op een authenticatiepagina terecht. We melden ons aan als <em>manager / manager</em>, c.a.d, de gebruiker met de rol [manager] die we zojuist hebben aangemaakt. Alleen een gebruiker met deze rol kan deze link namelijk gebruiken. Op regel 11 van [tomcat-users.xml] zien we dat de gebruiker [admin] ook de rol [manager] heeft. We zouden dus ook de authenticatie [admin / admin] kunnen gebruiken.</p>
+<p><img src="images/10000000000001F8000000D67A462871.png" width="353" height="150" style="width:9.329cm;height:3.96cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F8000000D67A462871.png" /></p>
+<p>We krijgen een pagina te zien met een overzicht van de applicaties die momenteel in Tomcat zijn geïmplementeerd:</p>
+<p><img src="images/100000000000039F0000016C59E0553F.png" width="649" height="255" style="width:17.17cm;height:6.74cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000039F0000016C59E0553F.png" /></p>
+<p>We kunnen een nieuwe applicatie toevoegen via de formulieren onderaan de pagina:</p>
+<p><img src="images/100000000000028200000139B2C04842.png" width="449" height="219" style="width:11.89cm;height:5.8cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028200000139B2C04842.png" /></p>
+<p>Hier willen we de <strong>voorbeeldapplicatie</strong> die we eerder hebben gebouwd, in Tomcat implementeren. Dat doen we als volgt:</p>
+<p><img src="images/100000000000026D000000AABF6A1FE1.png" width="435" height="119" style="width:11.501cm;height:3.15cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026D000000AABF6A1FE1.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Context Path
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/voorbeeld</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">de naam die wordt gebruikt om de te implementeren webapplicatie aan te duiden</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Directory URL
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">C:\data\2005-2006\eclipse\dvp-eclipse-tomcat\voorbeeld</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">de map van de webapplicatie</div></td></tr></table>
+
+<p>Om het bestand [C:\data\2005-2006\eclipse\dvp-eclipse-tomcat\exemple\vues\exemple.html] te verkrijgen, vragen we Tomcat om URL [http://localhost:8080/exemple/vues/exemple.html]. De <strong>context</strong> dient dus om de hoofdmap van de geïmplementeerde webapplicatie een naam te geven. We gebruiken de knop [Deploy] om de applicatie te implementeren. Als alles goed verloopt, krijgen we de volgende responspagina te zien:</p>
+<p><img src="images/10000000000002D500000062596537D1.png" width="507" height="68" style="width:13.42cm;height:1.81cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D500000062596537D1.png" /></p>
+<p>en de nieuwe applicatie verschijnt in de lijst met geïmplementeerde applicaties:</p>
+<p><img src="images/10000000000003780000013C88A06F9A.png" width="533" height="190" style="width:14.101cm;height:5.02cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003780000013C88A06F9A.png" /></p>
+<p>Laten we de regel in de bovenstaande context <strong>/voorbeeld eens</strong> toelichten:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>/exemple
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">link naar http://localhost:8080/exemple</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Démarrer
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">hiermee start je de applicatie</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Arrêter
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">hiermee kun je de applicatie afsluiten</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Recharger
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">hiermee kun je de applicatie opnieuw laden. Dit is bijvoorbeeld nodig wanneer je bepaalde klassen aan de applicatie hebt toegevoegd, gewijzigd of verwijderd.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>Undeploy
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">verwijdert de context [/exemple]. De applicatie verdwijnt uit de lijst met beschikbare applicaties.</div></td></tr></table>
+
+<p>Nu onze <strong>voorbeeldapplicatie</strong> is geïmplementeerd, kunnen we enkele tests uitvoeren. We roepen de pagina [exemple.html] op via de URL [http://localhost:8080/exemple/vues/exemple.html]:</p>
+<p><img src="images/10000000000001DC000000642B4CDE8F.png" width="333" height="70" style="width:8.819cm;height:1.85cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DC000000642B4CDE8F.png" /></p>
+<p>Een andere manier om een webapplicatie op de Tomcat-server te implementeren, is door de gegevens die we via de webinterface hebben opgegeven, op te nemen in een bestand [contexte].xml in de map [&lt;tomcat&gt;\conf\Catalina\localhost], waarbij [contexte] de naam van de webapplicatie is.</p>
+<p>Laten we teruggaan naar de beheerinterface van Tomcat:</p>
+<p><img src="images/100000000000037A000000B164E93909.png" width="623" height="124" style="width:16.48cm;height:3.281cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000037A000000B164E93909.png" /></p>
+<p>Laten we de applicatie [/exemple] samen met de bijbehorende link [Undeploy] verwijderen:</p>
+<p><img src="images/10000000000001C30000011A8AD7436E.png" width="316" height="197" style="width:8.35cm;height:5.219cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C30000011A8AD7436E.png" /></p>
+<p>De applicatie [/exemple] staat niet meer in de lijst met actieve applicaties. Laten we nu het volgende bestand [exemple.xml] definiëren:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a>&lt;Context docBase=&quot;C:/data/2005-2006/eclipse/dvp-eclipse-tomcat/exemple&quot;&gt;
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>&lt;/Context&gt;
+</code></pre></div></td></tr></table></div>
+<p>Het bestand XML bestaat uit één enkele &lt;<strong>Context</strong>&gt;-tag waarvan het attribuut <strong>docBase</strong> de map definieert die de te implementeren webapplicatie bevat. Laten we dit bestand in &lt;tomcat&gt;\conf\Catalina\localhost plaatsen:</p>
+<p><img src="images/10000000000000AE000000794B6207F4.png" width="122" height="85" style="width:3.221cm;height:2.24cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AE000000794B6207F4.png" /></p>
+<p>Stop Tomcat indien nodig en start het opnieuw op, en bekijk vervolgens de lijst met actieve applicaties via de Tomcat-beheerder:</p>
+<p><img src="images/10000000000001C800000132175BFB5E.png" width="319" height="214" style="width:8.451cm;height:5.669cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C800000132175BFB5E.png" /></p>
+<p>De applicatie [/exemple] is inderdaad aanwezig. Laten we met een browser de URL opvragen:</p>
+<p>[http://localhost:8080/exemple/vues/exemple.html]:</p>
+<p>Een op deze manier geïmplementeerde webapplicatie kan op dezelfde manier als eerder uit de lijst met geïmplementeerde applicaties worden verwijderd via de link [Undeploy]:</p>
+<p><img src="images/10000000000001D40000006870F2C34A.png" width="328" height="73" style="width:8.67cm;height:1.926cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D40000006870F2C34A.png" /></p>
+<p><img src="images/100000000000037A000000B164E93909.png" width="623" height="124" style="width:16.48cm;height:3.281cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000037A000000B164E93909.png" /></p>
+<p>In dit geval wordt het bestand [exemple.xml] automatisch verwijderd uit de map [&lt;tomcat&gt;\conf\Catalina\localhost].</p>
+<p>Ten slotte kan men, om een webapplicatie binnen Tomcat te implementeren, de context ervan ook definiëren in het bestand [&lt;tomcat&gt;\conf\server.xml]. We zullen hier niet verder op ingaan.</p>
+<p><span id="page-accueil" name="page-accueil" class="odt-bookmark-anchor"></span></p>
+<h3 id="234-webapplicatie-met-startpagina">2.3.4. <span style="color: #4f81bd">Webapplicatie met startpagina</span></h3>
+<p>Wanneer we de URL [http://localhost:8080/exemple/] opvragen, krijgen we het volgende antwoord:</p>
+<p><img src="images/1000000000000191000000F3E3DA4EFD.png" width="281" height="170" style="width:7.43cm;height:4.5cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000191000000F3E3DA4EFD.png" /></p>
+<p>Dit resultaat hangt af van de configuratie van Tomcat. Bij eerdere versies zouden we de inhoud van de fysieke map van de applicatie [/exemple] hebben gekregen. Het is een goede zaak dat Tomcat deze weergave nu standaard voorkomt.</p>
+<p>We kunnen ervoor zorgen dat er, wanneer de context wordt opgevraagd, een zogenaamde startpagina wordt weergegeven. Hiervoor maken we een bestand [web.xml] aan dat we in de map &lt;voorbeeld&gt;\WEB-INF plaatsen, waarbij &lt;voorbeeld&gt; de fysieke map is van de webapplicatie [/exemple]. Dit bestand ziet er als volgt uit:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-33-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-33-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-33-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-33-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-33-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-33-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-33-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-33-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-33-10">10</a></span>
+<span class="normal"><a href="#__codelineno-33-11">11</a></span>
+<span class="normal"><a href="#__codelineno-33-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="nt">&lt;web-app</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://java.sun.com/xml/ns/j2ee&quot;</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a><span class="w">    </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="w">    </span><span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd&quot;</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5"></a><span class="w">    </span><span class="na">version=</span><span class="s">&quot;2.4&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6"></a>
+<a id="__codelineno-33-7" name="__codelineno-33-7"></a><span class="w">  </span><span class="nt">&lt;display-name&gt;</span>Application<span class="w"> </span>Exemple<span class="nt">&lt;/display-name&gt;</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8"></a><span class="w">  </span><span class="nt">&lt;description&gt;</span>Application<span class="w"> </span>web<span class="w"> </span>minimale<span class="nt">&lt;/description&gt;</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9"></a><span class="w">    </span><span class="nt">&lt;welcome-file-list&gt;</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10"></a><span class="w">        </span><span class="nt">&lt;welcome-file&gt;</span>/vues/exemple.html<span class="nt">&lt;/welcome-file&gt;</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11"></a><span class="w">    </span><span class="nt">&lt;/welcome-file-list&gt;</span><span class="w">    </span>
+<a id="__codelineno-33-12" name="__codelineno-33-12"></a><span class="nt">&lt;/web-app&gt;</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+  <li>regels 2-5: de root-tag &lt;web-app&gt; met attributen die zijn gekopieerd en geplakt uit het bestand [web.xml] van de Tomcat-applicatie [/admin] (&lt;tomcat&gt;/server/webapps/admin/WEB-INF/web.xml).
+  </li>
+  <li>regel 7: de weergavenaam van de webapplicatie. Dit is een vrije naam waarvoor minder beperkingen gelden dan voor de contextnaam van de applicatie. Je kunt er bijvoorbeeld spaties in gebruiken, wat bij de contextnaam niet mogelijk is. Deze naam wordt bijvoorbeeld weergegeven door de Tomcat-beheerder:
+  </li>
+</ul>
+
+<p><img src="images/10000000000002B40000011E5A2894F7.png" width="346" height="143" style="width:9.155cm;height:3.784cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002B40000011E5A2894F7.png" /></p>
+<ul>
+  <li>regel 8: beschrijving van de webapplicatie. Deze tekst kan vervolgens programmatisch worden opgehaald.
+  </li>
+  <li>regels 9-11: de lijst met welkomstbestanden. De tag &lt;welcome-file-list&gt; wordt gebruikt om de lijst met weergaven te definiëren die moeten worden getoond wanneer een client de applicatiecontext opvraagt. Er kunnen meerdere weergaven zijn. De eerste die wordt gevonden, wordt aan de client getoond. Hier hebben we er maar één: [/vues/exemple.html]. Wanneer een client dus de URL [/exemple] opvraagt, wordt in feite de URL [/exemple/vues/exemple.html] geleverd.
+  </li>
+</ul>
+
+<p>Laten we dit bestand [web.xml] opslaan in &lt;voorbeeld&gt;\WEB-INF:</p>
+<p><img src="images/10000000000000840000006B02778D21.png" width="105" height="85" style="width:2.79cm;height:2.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000840000006B02778D21.png" /></p>
+<p>Als Tomcat nog steeds actief is, kun je het dwingen de webapplicatie [/exemple] opnieuw te laden via de link [Recharger]:</p>
+<p><img src="images/100000000000037800000050429BCF05.png" width="622" height="56" style="width:16.45cm;height:1.48cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000037800000050429BCF05.png" /></p>
+<p>Tijdens deze &quot;herlaad&quot;-bewerking leest Tomcat het bestand [web.xml] dat in [&lt;exemple&gt;\WEB-INF] is opgenomen opnieuw in, indien het bestaat. Dat is hier het geval. Als Tomcat was gestopt, start u het opnieuw op.</p>
+<p>Laten we met een browser het bestand URL en [http://localhost:8080/exemple/] opvragen:</p>
+<p><img src="images/100000000000017F0000006436197B67.png" width="268" height="70" style="width:7.091cm;height:1.85cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017F0000006436197B67.png" /></p>
+<p>Het mechanisme van de hostbestanden heeft gewerkt.</p>
+<h2 id="24-installatie-van-eclipse">2.4. <span style="color: #4f81bd">Installatie van Eclipse</span></h2>
+<p>Eclipse is een ontwikkelomgeving voor meerdere programmeertalen. Het wordt veel gebruikt bij de ontwikkeling van Java. Het is een uitbreidbaar hulpmiddel door het toevoegen van tools die ‘plugins’ worden genoemd. Er bestaan een groot aantal plugins en dat is de kracht van Eclipse.</p>
+<p>Eclipse is beschikbaar via de URL [http://www.eclipse.org/downloads/]:</p>
+<p><img src="images/10000000000002C0000000E0CF431884.png" width="493" height="157" style="width:13.04cm;height:4.15cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002C0000000E0CF431884.png" /></p>
+<p>We willen Eclipse gebruiken voor webontwikkeling in Java. Hiervoor bestaan een aantal plug-ins. Deze helpen bij het controleren van de syntaxis van JSP-pagina&#x27;s, XML-bestanden, ... en maken het mogelijk om een webapplicatie binnen Eclipse te testen. We gaan een van deze plug-ins gebruiken, namelijk <strong>het Web Tools Package (WTP)</strong>. De gebruikelijke installatieprocedure voor Eclipse is als volgt:</p>
+<ol>
+  <li>Eclipse installeren
+  </li>
+  <li>de benodigde plug-ins installeren
+  </li>
+</ol>
+
+<p>De plug-in WTP vereist zelf weer andere plug-ins, waardoor de installatie ervan vrij complex is. Daarom biedt de Eclipse-website een pakket aan dat het Eclipse-ontwikkelplatform en de plug-in WTP bevat, samen met alle andere plug-ins die deze nodig heeft. Dit pakket is beschikbaar op de Eclipse-website (mei 2006) via de URL [http://download.eclipse.org/webtools/downloads/]:</p>
+<p><img src="images/1000000000000222000000CEEEA1B6D1.png" width="382" height="144" style="width:10.111cm;height:3.821cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000222000000CEEEA1B6D1.png" /></p>
+<p>Laten we de bovenstaande link [1.0.2] volgen:</p>
+<p>We downloaden het pakket [wtp] via de bovenstaande link. Het verkregen zip-bestand bevat het volgende:</p>
+<p><img src="images/1000000000000325000000B3217D7C34.png" width="564" height="125" style="width:14.91cm;height:3.314cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000325000000B3217D7C34.png" /></p>
+<p><img src="images/100000000000014D00000089692CD041.png" width="233" height="96" style="width:6.17cm;height:2.54cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014D00000089692CD041.png" /></p>
+<p>Pak deze inhoud gewoon uit in een map. We noemen deze map voortaan &lt;eclipse&gt;. De inhoud ervan is als volgt:</p>
+<p><img src="images/10000000000000D100000135B80A0BE7.png" width="105" height="155" style="width:2.766cm;height:4.089cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D100000135B80A0BE7.png" /></p>
+<p>[eclipse.exe] is het uitvoerbare bestand en [eclipse.ini] het configuratiebestand ervan. Laten we de inhoud ervan eens bekijken:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a>-vmargs
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a>-Xms40m
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a>-Xmx256m
+</code></pre></div></td></tr></table></div>
+<p>Deze argumenten worden bij het opstarten van Eclipse als volgt gebruikt:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>eclipse.exe -vmargs -Xms40m -Xmx256m
+</code></pre></div>
+<p>We komen tot hetzelfde resultaat als met het .ini-bestand door een snelkoppeling te maken die Eclipse met dezelfde argumenten start. Laten we deze eens toelichten:</p>
+<ul>
+  <li><b>-vmargs</b>: geeft aan dat de volgende argumenten bestemd zijn voor de Java-virtuele machine die Eclipse gaat uitvoeren. Eclipse is namelijk een Java-toepassing.
+  </li>
+  <li><b>-Xms40m</b>: ?
+  </li>
+  <li><b>-Xmx256m</b>: stelt de geheugengrootte in MB in die wordt toegewezen aan de Java-virtuele machine (JVM) die Eclipse uitvoert. Standaard is deze grootte 256 MB, zoals hier weergegeven. Indien de machine dit toelaat, verdient 512 MB de voorkeur.
+  </li>
+</ul>
+
+<p>Deze argumenten worden doorgegeven aan de JVM die Eclipse gaat uitvoeren. De JVM wordt vertegenwoordigd door een bestand [java.exe] of [javaw.exe]. Hoe wordt dit bestand gevonden? Er wordt op verschillende manieren naar gezocht:</p>
+<ol>
+  <li>in het bestand PATH van het bestand OS
+  </li>
+  <li>in de map &lt;JAVA_HOME&gt;/jre/bin, waarbij JAVA_HOME een systeemvariabele is die de hoofdmap van een JDK definieert.
+  </li>
+  <li>naar een locatie die als argument aan Eclipse wordt doorgegeven in de vorm -vm &lt;pad&gt;\javaw.exe
+  </li>
+</ol>
+
+<p>Deze laatste oplossing verdient de voorkeur, omdat de andere twee onderhevig zijn aan onvoorziene omstandigheden bij latere installaties van applicaties, die ofwel de PATH van de OS kunnen wijzigen, ofwel de variabele JAVA_HOME kunnen wijzigen.</p>
+<p>We maken daarom de volgende snelkoppeling aan:</p>
+<p><img src="images/100000000000015D000000F3E7CBEB9D.png" width="244" height="170" style="width:6.459cm;height:4.5cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015D000000F3E7CBEB9D.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>cible
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">&lt;eclipse&gt;\eclipse.exe -vm &quot;C:\Program Files\Java\jre1.5.0_06\bin\javaw.exe&quot; -vmargs -Xms40m -Xmx512m</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Démarrer dans
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Eclipse-installatiemap &lt;eclipse&gt;</div></td></tr></table>
+
+<p>Als dit is gebeurd, starten we Eclipse via deze snelkoppeling. Er verschijnt een eerste dialoogvenster:</p>
+<p><img src="images/10000000000001B1000000EE017F9FA4.png" width="303" height="167" style="width:8.02cm;height:4.41cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B1000000EE017F9FA4.png" /></p>
+<p>Een [workspace] is een werkruimte. Laten we de voorgestelde standaardwaarden accepteren. Standaard worden Eclipse-projecten aangemaakt in de map &lt;workspace&gt; die in dit dialoogvenster is opgegeven. Er is een manier om dit gedrag te omzeilen. Dat zullen we systematisch doen. Het antwoord dat in dit dialoogvenster wordt gegeven, is dus niet van belang.</p>
+<p>Na deze stap wordt de Eclipse-ontwikkelomgeving weergegeven:</p>
+<p><img src="images/100000000000014100000091A46A2596.png" width="225" height="101" style="width:5.941cm;height:2.679cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014100000091A46A2596.png" /></p>
+<p>We sluiten het venster [Welcome] zoals hierboven voorgesteld:</p>
+<p><img src="images/10000000000001BB000000A0D3E0E64C.png" width="310" height="112" style="width:8.2cm;height:2.96cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BB000000A0D3E0E64C.png" /></p>
+<p>Voordat we een Java-project aanmaken, gaan we Eclipse configureren om aan te geven dat JDK moet worden gebruikt voor het compileren van Java-projecten. Hiervoor kiezen we de optie [Window / Preferences / Java / Installed JREs ]:</p>
+<p><img src="images/100000000000023F00000131E878E6BA.png" width="403" height="214" style="width:10.65cm;height:5.65cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000023F00000131E878E6BA.png" /></p>
+<p>Normaal gesproken moet de JRE (Java Runtime Environment) die is gebruikt om Eclipse zelf te starten, in de lijst met JRE staan. Dit is normaal gesproken de enige. Het is mogelijk om JRE toe te voegen met de knop [Add]. U moet dan de hoofdmap van de JRE aangeven. De knop [Search] start op zijn beurt een zoekopdracht naar JREs op de schijf. Dit is een goede manier om te achterhalen hoe het staat met de JREs-bestanden die je installeert en vervolgens vergeet te verwijderen wanneer je overstapt op een nieuwere versie. Hierboven is het aangevinkte bestand JRE het bestand dat zal worden gebruikt om de Java-projecten te compileren en uit te voeren.</p>
+<p>Het JRE dat in onze voorbeelden wordt gebruikt, is het bestand dat in paragraaf<a href="#jdk15"><u><span style="color: #0563c1"> 2.1</span></u></a> is geïnstalleerd en dat ook is gebruikt om Eclipse te starten. Door erop te dubbelklikken krijg je toegang tot de eigenschappen ervan:</p>
+<p><img src="images/10000000000001F400000094CFF7D00F.png" width="350" height="104" style="width:9.26cm;height:2.739cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F400000094CFF7D00F.png" /></p>
+<p>Laten we nu een Java-project [File / New / Project] aanmaken:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001FA0000005A44BC86CD.png" width="354" height="63" style="display:inline-block; margin:4px;width:9.37cm;height:1.67cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FA0000005A44BC86CD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000F200000145272DC3F6.png" width="169" height="228" style="display:inline-block; margin:4px;width:4.48cm;height:6.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F200000145272DC3F6.png" /></td></tr></table>
+
+<p>Kies [Java Project], vervolgens [Next] -&gt;</p>
+<p><img src="images/10000000000002CA00000172C0429BFF.png" width="357" height="185" style="width:9.446cm;height:4.895cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002CA00000172C0429BFF.png" /></p>
+<p>In [2] geven we een lege map op waarin het Java-project zal worden geïnstalleerd. In [1] geven we het project een naam. De naam hoeft niet dezelfde te zijn als die van de map, zoals het bovenstaande voorbeeld zou kunnen doen vermoeden. Zodra dit is gebeurd, klikken we op de knop [Finish] om de aanmaakwizard af te sluiten. Dit komt neer op het accepteren van de standaardwaarden die op de volgende pagina’s van de wizard worden voorgesteld.</p>
+<p>We hebben nu een Java-projectskelet:</p>
+<p><img src="images/10000000000000FF000000B838BB0DCE.png" width="178" height="129" style="width:4.72cm;height:3.41cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FF000000B838BB0DCE.png" /></p>
+<p>Klik met de rechtermuisknop op het project [test1] om een Java-klasse aan te maken:</p>
+<p><img src="images/10000000000001EC00000098F9362CED.png" width="344" height="107" style="width:9.11cm;height:2.82cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EC00000098F9362CED.png" /></p>
+<p><img src="images/10000000000002EC00000256F45BCA6B.png" width="374" height="299" style="width:9.895cm;height:7.911cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002EC00000256F45BCA6B.png" /></p>
+<ul>
+  <li>in [1], de map waarin de klasse wordt aangemaakt. Eclipse stelt standaard de map van het huidige project voor.
+  </li>
+  <li>in [2], het pakket waarin de klasse wordt geplaatst
+  </li>
+  <li>in [3], de naam van de klasse
+  </li>
+  <li>in [4] vragen we om de statische methode [main] te genereren
+  </li>
+</ul>
+
+<p>We bevestigen de wizard met [Finish]. Het project wordt vervolgens uitgebreid met een klasse:</p>
+<p><img src="images/10000000000000FA0000007FE202980F.png" width="175" height="89" style="width:4.63cm;height:2.35cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FA0000007FE202980F.png" /></p>
+<p>Eclipse heeft het skelet van de klasse gegenereerd. Dit wordt weergegeven door te dubbelklikken op [Test1.java] hierboven:</p>
+<p><img src="images/1000000000000183000000FB18D1EB70.png" width="271" height="176" style="width:7.17cm;height:4.65cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000183000000FB18D1EB70.png" /></p>
+<p>We passen de bovenstaande code als volgt aan:</p>
+<p><img src="images/1000000000000182000000A72DD0FDB4.png" width="309" height="133" style="width:8.17cm;height:3.53cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000182000000A72DD0FDB4.png" /></p>
+<p>We voeren het programma [Test1.java] uit: [clic droit sur Test1.java -&gt; Run As -&gt; Java Application] </p>
+<p><img src="images/1000000000000236000001DC862D21E9.png" width="396" height="333" style="width:10.479cm;height:8.819cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000236000001DC862D21E9.png" /></p>
+<p>Het resultaat van de uitvoering wordt weergegeven in het venster [Console]:</p>
+<p><img src="images/10000000000002320000005BDE353695.png" width="393" height="63" style="width:10.41cm;height:1.679cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002320000005BDE353695.png" /></p>
+<p><span id="tomcat-eclipse" name="tomcat-eclipse" class="odt-bookmark-anchor"></span></p>
+<h2 id="25-tomcat-integratie-eclipse">2.5. <span style="color: #4f81bd">Tomcat-integratie - Eclipse</span></h2>
+<p>Om met Tomcat te kunnen werken terwijl we in Eclipse blijven, moeten we deze server in de Eclipse-configuratie opgeven. Hiervoor kiezen we de optie [File / New / Other]. We krijgen dan de volgende wizard te zien:</p>
+<p><img src="images/10000000000000C7000000F4CA73BB15.png" width="139" height="171" style="width:3.679cm;height:4.521cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C7000000F4CA73BB15.png" /></p>
+<p>We kiezen ervoor om een nieuwe server aan te maken. We selecteren het pictogram [Server] hierboven en voeren vervolgens [Next] uit:</p>
+<p>Het toevoegen van de server resulteert in het verschijnen van een map in de projectverkenner van Eclipse:</p>
+<p>Om Tomcat vanuit Eclipse te beheren, openen we de weergave met de naam [Servers] met de optie [Window -&gt; Show View -&gt; Other -&gt; Server]:</p>
+<p><img src="images/10000000000000FB0000009DD4B4489A.png" width="176" height="110" style="width:4.65cm;height:2.909cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FB0000009DD4B4489A.png" /></p>
+<p><img src="images/10000000000001230000011168B562B8.png" width="204" height="191" style="width:5.39cm;height:5.061cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001230000011168B562B8.png" /></p>
+<p>Maak [OK] aan. De weergave [Servers] verschijnt dan:</p>
+<p><img src="images/10000000000002310000005B1BD0BD52.png" width="393" height="63" style="width:10.389cm;height:1.679cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002310000005B1BD0BD52.png" /></p>
+<p>In dit scherm worden alle geregistreerde servers weergegeven, in dit geval de Tomcat 5.5-server die we zojuist hebben geregistreerd. Met een rechtermuisklik hierop krijgt u toegang tot de opdrachten om de server te starten, te stoppen of opnieuw op te starten:</p>
+<p><img src="images/10000000000001D4000000FF666264AC.png" width="328" height="178" style="width:8.67cm;height:4.72cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D4000000FF666264AC.png" /></p>
+<p>Hierboven starten we de server. Tijdens het opstarten worden er een aantal logbestanden geschreven in het venster [Console]:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span>
+<span class="normal"><a href="#__codelineno-38-3">3</a></span>
+<span class="normal"><a href="#__codelineno-38-4">4</a></span>
+<span class="normal"><a href="#__codelineno-38-5">5</a></span>
+<span class="normal"><a href="#__codelineno-38-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a>11 mai 2006 15:31:16 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a>INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.5.0_06\bin;.;C:\WINDOWS\system32;...
+<a id="__codelineno-38-3" name="__codelineno-38-3"></a>11 mai 2006 15:31:16 org.apache.coyote.http11.Http11BaseProtocol init
+<a id="__codelineno-38-4" name="__codelineno-38-4"></a>INFO: Initialisation de Coyote HTTP/1.1 sur http-8080
+<a id="__codelineno-38-5" name="__codelineno-38-5"></a>...
+<a id="__codelineno-38-6" name="__codelineno-38-6"></a>INFO: Server startup in 1641 ms
+</code></pre></div></td></tr></table></div>
+<p>Het duurt even voordat je deze logbestanden begrijpt. We zullen er voorlopig niet verder op ingaan. Het is echter belangrijk om te controleren of er geen fouten bij het laden van contexten worden gemeld. Wanneer de Tomcat-/Eclipse-server wordt gestart, probeert deze namelijk de context van de applicaties die hij beheert te laden. Het laden van de context van een applicatie houdt in dat het bijbehorende bestand [web.xml] wordt verwerkt en dat een of meer klassen worden geladen die deze context initialiseren. Er kunnen dan verschillende soorten fouten optreden:</p>
+<ul>
+  <li>het bestand [web.xml] bevat syntactische fouten. Dit is de meest voorkomende fout. Het wordt aangeraden om een tool te gebruiken die de geldigheid van een XML-document kan controleren tijdens het samenstellen ervan.
+  </li>
+  <li>bepaalde te laden klassen zijn niet gevonden. Er wordt naar deze klassen gezocht in [WEB-INF/classes] en [WEB-INF/lib]. Over het algemeen moet worden gecontroleerd of de benodigde klassen aanwezig zijn en of de spelling van de klassen die in het bestand [web.xml] zijn gedeclareerd, correct is.
+  </li>
+</ul>
+
+<p>De server die vanuit Eclipse is gestart, heeft niet dezelfde configuratie als de server die in paragraaf<a href="#installtomcat55"><u><span style="color: #0563c1"> 2.2</span></u></a>, pagina<a href="#installtomcat55"><u><span style="color: #0563c1"> 5</span></u></a>, is geïnstalleerd. Om dit te controleren, roepen we de URL [http://localhost:8080] op met een browser:</p>
+<p><img src="images/100000000000015D000000FEB7A5B628.png" width="244" height="178" style="width:6.459cm;height:4.701cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015D000000FEB7A5B628.png" /></p>
+<p>Dit antwoord betekent niet dat de server niet werkt, maar dat de opgevraagde bron / niet beschikbaar is. Met de in Eclipse geïntegreerde Tomcat-server zullen deze bronnen webprojecten zijn. Dat zullen we later zien. Laten we Tomcat voorlopig even stoppen:</p>
+<p><img src="images/10000000000002140000011F3F3C3A8F.png" width="372" height="201" style="width:9.85cm;height:5.309cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002140000011F3F3C3A8F.png" /></p>
+<p><span id="eclipse-tomcat-conftomcat" name="eclipse-tomcat-conftomcat" class="odt-bookmark-anchor"></span>De vorige werkwijze kan worden gewijzigd. Laten we teruggaan naar de weergave [Servers] en dubbelklikken op de Tomcat-server om de eigenschappen ervan te openen:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000012B0000005421B2C8B7.png" width="209" height="59" style="display:inline-block; margin:4px;width:5.54cm;height:1.559cm;" class="odt-zoomable" data-zoom-src="images/100000000000012B0000005421B2C8B7.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000028C000001F20C548765.png" width="326" height="249" style="display:inline-block; margin:4px;width:8.625cm;height:6.588cm;" class="odt-zoomable" data-zoom-src="images/100000000000028C000001F20C548765.png" /></td></tr></table>
+
+<p>Het selectievakje [1] is verantwoordelijk voor de vorige werkwijze. Wanneer dit vakje is aangevinkt, worden de in Eclipse ontwikkelde webapplicaties niet in de configuratiebestanden van de bijbehorende Tomcat-server gedeclareerd, maar in aparte configuratiebestanden. Hierdoor zijn de standaard gedefinieerde applicaties binnen de Tomcat-server niet beschikbaar: [admin] en [manager], twee nuttige applicaties. Daarom gaan we het selectievakje [1] uitschakelen en Tomcat opnieuw opstarten:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001B40000007B9C70A7A5.png" width="305" height="86" style="display:inline-block; margin:4px;width:8.08cm;height:2.281cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B40000007B9C70A7A5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001DE00000057E3109BE9.png" width="334" height="61" style="display:inline-block; margin:4px;width:8.849cm;height:1.61cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DE00000057E3109BE9.png" /></td></tr></table>
+
+<p>Als dit is gebeurd, roepen we de URL [http://localhost:8080] op met een browser:</p>
+<p><img src="images/100000000000016F000001686E4F1413.png" width="257" height="252" style="width:6.8cm;height:6.669cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016F000001686E4F1413.png" /></p>
+<p>We zien dat het systeem werkt zoals beschreven in paragraaf<a href="#tomcat-manager"><u><span style="color: #0563c1"> 2.3.3</span></u></a>, pagina<a href="#tomcat-manager"><u><span style="color: #0563c1"> 15</span></u></a>.</p>
+<p>In onze voorgaande voorbeelden hebben we een browser buiten Eclipse gebruikt. Je kunt ook een browser binnen Eclipse gebruiken:</p>
+<p><img src="images/100000000000017000000148CDAF2269.png" width="258" height="229" style="width:6.819cm;height:6.07cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017000000148CDAF2269.png" /></p>
+<p>Hierboven selecteren we de interne browser. Om deze vanuit Eclipse te starten, kun je het volgende pictogram gebruiken:</p>
+<p><img src="images/100000000000008E0000006852DC8D1C.png" width="99" height="73" style="width:2.63cm;height:1.93cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000008E0000006852DC8D1C.png" /></p>
+<p>De browser die daadwerkelijk wordt gestart, is degene die is geselecteerd via de optie [Window -&gt; Web Browser]. In dit geval krijgen we de interne browser te zien:</p>
+<p><img src="images/100000000000026C0000006E427D019C.png" width="310" height="53" style="width:8.19cm;height:1.409cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026C0000006E427D019C.png" /></p>
+<p>Laten we indien nodig Tomcat vanuit Eclipse starten en in [1] de URL [http://localhost:8080] opvragen:</p>
+<p><img src="images/10000000000001A60000011A51DADE98.png" width="296" height="197" style="width:7.819cm;height:5.219cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A60000011A51DADE98.png" /></p>
+<p>Laten we de link [Tomcat Manager] volgen:</p>
+<p><img src="images/10000000000001440000012036F09775.png" width="227" height="201" style="width:6.001cm;height:5.33cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001440000012036F09775.png" /></p>
+<p>Er wordt gevraagd om de combinatie [login / mot de passe] die nodig is om toegang te krijgen tot de applicatie [manager]. Op basis van de Tomcat-configuratie die we eerder hebben uitgevoerd, kunnen we [admin / admin] of [manager / manager] invoeren. Vervolgens krijgen we de lijst met geïmplementeerde applicaties te zien:</p>
+<p><img src="images/10000000000002D10000008AE6C94924.png" width="505" height="97" style="width:13.351cm;height:2.559cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D10000008AE6C94924.png" /></p>
+<p>We zien de applicatie [personne] die we hebben aangemaakt. De bijbehorende link [Recharger] zullen we later nog nodig hebben.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Deze cursus-tutorial, geschreven door <strong>Serge Tahé</strong>, wordt aan het publiek ter beschikking gesteld volgens de voorwaarden van de
+        <em>Creative Commons Naamsvermelding – Geen commercieel gebruik –
+        Gelijk delen 3.0 ongewijzigd</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
